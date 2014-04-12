@@ -1,0 +1,2 @@
+<h3>Welcome <?php echo $this->session->userdata('username'); ?>!</h3>
+<a href="#" style="padding: 15px 6px; display: block; background: #333; color: #fff; width: 200px; text-align: center; margin-top: 4px; font-size: 11px;">+ Create Event</a>

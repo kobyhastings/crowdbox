@@ -1,0 +1,1 @@
+<h5>Thanks for signing up! Enjoy!</h5>

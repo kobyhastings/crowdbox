@@ -1,0 +1,1 @@
+place all site images in this folder
