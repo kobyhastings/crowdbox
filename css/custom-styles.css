@@ -1,1 +1,42 @@
 /* Place all custom styles in this file */
+
+p, h1, h2, h3, h4, h5, h6, li, td, tr, table, a, input, body { font-family: 'Raleway', sans-serif; }
+p, h1, h2, h3, h4, h5, h6 { color: #fff; }
+
+
+a { color: #fff; }
+a:hover { color: #fff; cursor: pointer; }
+.contentWrapper { color: #fff; }
+body#body { background: url('../img/background.png'); background-size: cover; }
+
+h1.slogan { text-align: right; font-family: 'Miss Fajardose', sans-serif; font-size: 100px; color: #fff; margin-top: 40px; }
+
+form.enterCode input { width: 400px; height: 75px; color: #F59D20; outline-color: #F59D20; padding: 15px; font-size: 30px; background: #111; opacity: .8; border: 1px solid #000; border-radius: 12px; }
+form.enterCode input:hover, form.enterCode input:focus { background: #222; }
+form.enterCode input[type="submit"] { background: #bbb; height: 40px; margin-top: 5px; font-size: 20px; padding: 6; color: #444; border: none; } 
+form.enterCode input[type="submit"]:hover { background: #ccc; height: 40px; margin-top: 5px; font-size: 20px; padding: 6; color: #444; border: none; } 
+
+form#signupform input.input-lg, form#signinform input.input-lg { width: 325px; height: 40px; color: #F59D20; outline-color: #F59D20; padding: 6px; font-size: 20px; background: #111; opacity: .8; border: 1px solid #000; border-radius: 6px; margin-bottom: 3px; }
+form.enterCode input:hover, form.enterCode input:focus { background: #222; }
+
+#proudlyPowered { position: absolute; bottom: 8px; left: 8px; color: #eee; font-size: 12px; }
+
+.btn-inverse { background: #222; color: #ddd; }
+.btn-inverse:hover { color: #ddd; }
+
+.alert-inverse { background: #222; opacity: .9; color: #F59D20; font-size: 20px; }
+
+.message h3, .message { text-align: center; line-height: 2em; margin-top: 80px; }
+
+.divider { 
+	height: 1px; 
+ 	margin-top: 10px; 
+ 	margin-bottom: 16px;
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.11) 5%, rgba(0,0,0,0.26) 12%, rgba(0,0,0,0.55) 26%, rgba(0,0,0,0.8) 49%, rgba(0,0,0,0.79) 51%, rgba(0,0,0,0.64) 72%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(5%,rgba(0,0,0,0.11)), color-stop(12%,rgba(0,0,0,0.26)), color-stop(26%,rgba(0,0,0,0.55)), color-stop(49%,rgba(0,0,0,0.8)), color-stop(51%,rgba(0,0,0,0.79)), color-stop(72%,rgba(0,0,0,0.64)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.11) 5%,rgba(0,0,0,0.26) 12%,rgba(0,0,0,0.55) 26%,rgba(0,0,0,0.8) 49%,rgba(0,0,0,0.79) 51%,rgba(0,0,0,0.64) 72%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.11) 5%,rgba(0,0,0,0.26) 12%,rgba(0,0,0,0.55) 26%,rgba(0,0,0,0.8) 49%,rgba(0,0,0,0.79) 51%,rgba(0,0,0,0.64) 72%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.11) 5%,rgba(0,0,0,0.26) 12%,rgba(0,0,0,0.55) 26%,rgba(0,0,0,0.8) 49%,rgba(0,0,0,0.79) 51%,rgba(0,0,0,0.64) 72%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.11) 5%,rgba(0,0,0,0.26) 12%,rgba(0,0,0,0.55) 26%,rgba(0,0,0,0.8) 49%,rgba(0,0,0,0.79) 51%,rgba(0,0,0,0.64) 72%,rgba(0,0,0,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}

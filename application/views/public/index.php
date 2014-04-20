@@ -1,39 +1,22 @@
-<div id="contentWrapper">
-	<h3>Welcome to ~appname~!</h3>
 
-	<?php echo form_open('public/enterevent'); ?>
-		<input name="eventcode" placeholder="Enter event code" style="width: 200px; text-align: center; padding: 8px;" />
-	<?php echo form_close(); ?>
 
-	<button style="height: 40px; width: 200px;">Sign in to create an event.</button>
-	<br>
-	<a href="#" id="signUpButton" style=" display: block; width: 200px; text-align: center; margin-top: 4px; font-size: 11px;">Or, sign up now</a>
+
+<div class="row" style="margin: 60px 0px;">
+	<div class="col-md-5 col-md-offset-7">
+		<div id="contentWrapper">
+			<?php echo form_open('event/index', 'id="enterEvent" class="enterCode"'); ?>
+				<?php echo form_input('eventcode', '', 'placeholder="Enter event code" class="input" autocomplete="off"'); ?>
+				<?php echo form_submit('submit', "Go"); ?>
+			<?php echo form_close(); ?>
+			<span style="color: #fff; text-align: center;">
+				<a href="<?php echo site_url(); ?>/signin/index" id="signInButton" style="text-align: center;">Sign in to create/manage an event</a> <!-- | <a href="#" id="signUpButton" style="text-align: center;">Or sign up here</a> -->
+			</span>
+		</div>
+	</div>
 </div>
 
-<script type="text/javascript">
-	var request;
-   var fadeDuration = 300;
-   $("#signUpButton").click(function(event){
-   	$('#contentWrapper').fadeOut(fadeDuration, function() {
-			var $form = $(this);
-			var $inputs = $form.find("input");
-			var serializedData = $form.serialize();
-			$inputs.prop("disabled", true);
-
-			request = $.ajax({
-			   url: '<?php echo site_url(); ?>/signup/index',
-			   type: "post",
-			   data: serializedData
-			});
-
-			request.always(function () {
-			   $.get("<?php echo site_url(); ?>/signup/index", function (response) {
-			      $("#contentWrapper").html(response);
-			      $('#contentWrapper').fadeIn(fadeDuration);
-			   });
-			});
-		});
-
-     	event.preventDefault();
-   });
-</script>
+<div class="row" style="margin: 60px 0px;">
+	<div class="col-md-11">
+		<h1 class="slogan">You should have a say in the music you hear.</h1>
+	</div>
+</div>

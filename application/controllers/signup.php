@@ -18,7 +18,8 @@ class Signup extends MY_Controller {
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index() {
-		$this->load->view('signup/index');
+		$this->data['main_content'] = 'signup/index';
+		$this->load->view('public/_layout_main', $this->data);
 	}
 
 	public function createUser() {

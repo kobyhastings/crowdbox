@@ -5,6 +5,12 @@
 ________________________
 Rdio API Credentials:
 ========================
-Application: LAHACKS 
-Key: rgw4p74ucmhqdwd3h262ey2a 
-Shared Secret: QPQEH3dbJn
+Application: CrowdBox 
+Key: ak6c9r5rv2rb5d3r5j2wdzcn 
+Shared Secret: peeJfDUm4G
+
+________________________
+Rdio JS API Credentials:
+========================
+Client ID: h-uaNDbmEGuS2niqTrAUAQ
+Client Secret: Z6fasPBTVs0iKAqJOaRFvg

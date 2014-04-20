@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Signup extends MY_Controller {
+class Signin extends MY_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,11 +18,25 @@ class Signup extends MY_Controller {
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index() {
-		$this->load->view('signup/index');
+		$this->data['main_content'] = 'signin/index';
+		$this->load->view('public/_layout_main', $this->data);
 	}
 
 	public function verify() {
-		
+		$this->load->model('users_model');
+		$valid = $this->users_model->get_by(array('username' => $_POST['username'], 'password' => md5($_POST['password'])), TRUE);
+		if ($valid) {
+			$array = array(
+				'username' => $valid->username,
+				'email' => $valid->email,
+				'userid' => $valid->id
+			);
+			$this->session->set_userdata($array);
+			redirect('admin/dashboard');
+		} else {
+			$this->session->sess_destroy();
+			return FALSE;
+		}
 	}
 }
 

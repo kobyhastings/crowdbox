@@ -21,7 +21,7 @@
 				</p>
 			</div>
 			<div class="col-md-2 col-md-offset-3">
-				<img src="img/logo-lg.png" style="max-width: 100%; padding-top: 40px;">
+				<a href="<?php echo site_url(); ?>/home"><img src="img/logo-lg.png" style="max-width: 100%; padding-top: 40px;"></a>
 			</div>
 		</div>
 		<?php $this->load->view($main_content); ?>
