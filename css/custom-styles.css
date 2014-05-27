@@ -9,7 +9,7 @@ a:hover { color: #fff; cursor: pointer; }
 .contentWrapper { color: #fff; }
 body#body { background: url('../img/background.png'); background-size: cover; }
 
-h1.slogan { text-align: right; font-family: 'Miss Fajardose', sans-serif; font-size: 100px; color: #fff; margin-top: 40px; }
+h1.slogan { text-align: right; font-family: 'Miss Fajardose', sans-serif; font-size: 100px; color: #fff; margin-top: 40px; text-shadow: 1px 1px 5px rgba(0,0,0,.6); }
 
 form.enterCode input { width: 400px; height: 75px; color: #F59D20; outline-color: #F59D20; padding: 15px; font-size: 30px; background: #111; opacity: .8; border: 1px solid #000; border-radius: 12px; }
 form.enterCode input:hover, form.enterCode input:focus { background: #222; }
